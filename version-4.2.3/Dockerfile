@@ -1,4 +1,4 @@
-# Moodle 5.0
+# Moodle 4.2.3
 FROM php:8.2-apache
  
 RUN apt-get update && apt-get install -y \
