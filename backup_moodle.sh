@@ -13,9 +13,9 @@ echo "🔁 Moodle-Backup wird erstellt nach: $BACKUP_DIR"
  
 docker run --rm \
   --network $(docker network ls --filter name=moodlenet --format "{{.Name}}") \
-  -e MYSQL_PWD=deinpasswort \
-  mysql:5.7 \
-  mysqldump -h mariadb -u moodle moodle > "$BACKUP_DIR/db_backup.sql"
+  -e MYSQL_PWD=Riethuesli>12345 \
+  mariadb:latest \
+  mysqldump -h mariadb -u vmadmin moodle > "$BACKUP_DIR/db_backup.sql"
 
 docker run --rm \
   -v $(pwd)/moodledata:/data \
