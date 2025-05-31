@@ -4,6 +4,7 @@ services:
   moodle:
     build: .
     container_name: migration-moodle
+    restart: always
     ports:
       - "80:80"
     volumes:
