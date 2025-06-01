@@ -6,12 +6,13 @@ TIME=$(date +%H-%M)
 DAY_DIR="Backup $DATE"
 TIME_DIR="Backup (Time $TIME)"
 
+# Zielpfad
 BACKUP_DIR=$(pwd)/backups/"$DAY_DIR"/"$TIME_DIR"
 mkdir -p "$BACKUP_DIR"
 
 echo "🔁 Moodle-Backup wird erstellt nach: $BACKUP_DIR"
 
-NETWORK_NAME=$(docker network ls --filter name=moodle_moodlenet --format "{{.Name}}")
+NETWORK_NAME=$(docker network ls --filter name=moodlenet --format "{{.Name}}" | head -n1)
 
 docker run --rm \
   --network "$NETWORK_NAME" \
