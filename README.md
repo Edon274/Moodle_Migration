@@ -1,29 +1,17 @@
 # Moodle_Migration
 
-Dieses Projekt zeigt die Migration einer bestehenden Moodle-Installation in eine moderne Docker-Umgebung.
+Dieses Repository wurde im Rahmen der Module 158 und 169 erstellt.  
+Ziel war die Migration einer bestehenden Moodle-Installation in eine moderne Docker-Umgebung.
 
-## Projektstruktur
+Weitere Details zur Umsetzung, Testfälle und Ergebnisse sind in der vollständigen Dokumentation beschrieben.
 
-├── Dockerfiles/
-│ ├── Dockerfile_version-4.1.2/
-│ ├── Dockerfile_version-4.2.3/
-│ └── Dockerfile_version-5.0/
-├── backup_moodle.sh
-├── config.php
-├── docker-compose.yml
-├── README.md
+## Hinweise
 
+- Dieses Projekt wurde im Rahmen einer Ausbildungsarbeit erstellt.
+- Für technische Details und Anleitungen siehe **Dokumentation_M158_Migration_Moodle.pdf**.
 
-## Voraussetzungen
+## Autorenteam
 
-- Docker
-- Docker Compose
-- Internetzugang (für das Herunterladen von Moodle)
-
-## Schnellstart
-
-1. Repository klonen:
-
-```bash
-git clone https://github.com/Edon274/Moodle_Migration.git
-cd Moodle_Migration
+- Rilind Rama
+- Gianluca Hörler
+- Edon Thaqi
