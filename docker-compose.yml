@@ -42,6 +42,7 @@ services:
       - "8081:80"
     environment:
       - PMA_HOST=mariadb
+      - UPLOAD_LIMIT=50M
     depends_on:
       - mariadb
     networks:
